@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing:  border-box;
+    }
+    .site-container
+    {
+         display: grid;
+          height: 100vh;
+         grid-template-columns: 1fr 150px;
+         grid-template-rows: 100px 200px 1fr 100px;
+         grid-template-areas: 
+                "task task"
+                "menu sidebar"
+                "content sidebar"
+                "footer footer"
+  
+    }
+    .site-container div
+    {
+      background-color: black;
+      border: 1px solid red;
+    }
+    .item1
+    {
+      grid-area: task;
+      text-align: center;
+      color: aliceblue;
+      font-size: 50px;
+      font-style:italic ;
+    }
+    .item2
+    {
+      grid-area: menu;
+      color: aliceblue;
+      font-size: 50px;
+    }
+    .item3
+    {
+      grid-area: content;
+      color: aliceblue;
+      font-size: 100px;
+      background-color: blue !important;
+    }
+    .item4
+    {
+      grid-area: sidebar;
+      color: aliceblue;
+      font-size: 30px;
+    }
+    .item5
+    {
+      grid-area: footer;
+      color: aliceblue;
+      font-size: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="site-container">
+    <div class ="item1">Task</div>
+    <div class ="item2">Menu</div>
+    <div class = item3>Hi i am Govind and its for practice.</div>
+    <div class ="item4">This sidebar is useful to watch</div>
+    <div class ="item5">this is very useful</div>
+    
+  </div>
+  
+</body>
+</html>
